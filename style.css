@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
+}
+
+.btn {
+    padding: 10px 45px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    padding: 45px 50px;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+}
+
+header .logo {
+    width: 15%;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header .menubtn .btn {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px #00000038;
+    color: hsl(192, 100%, 9%);
+}
+
+header .menubtn .btn:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+.jumbotron {
+    position: relative;
+    background-image: url(images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    width: 100%; 
+}
+
+.jumbotron .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px
+}
+
+.jumbotron .container .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 40%;
+}
+
+.container .hero-content h1 {
+    font-size: 35px;
+}
+
+.container .hero-content p {
+    color: hsl(192, 100%, 9%);
+}
+
+.container .btn {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+.container .btn:hover, main .cta .cta-btn:hover {
+    background-color: hsl(323, 82%, 83%);
+}
+
+.jumbotron .container .hero-img {
+    width: 60%;
+}
+
+.container .hero-img img {
+    width: 100%;
+}
+
+main {
+    position: relative;
+    padding: 120px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: auto;
+}
+
+main section {
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #00000021;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 55px;
+    gap: 60px;
+    width: 100%;                
+}
+
+main section .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+main section .content p {
+    color: hsl(208, 11%, 55%);
+}
+
+main section .detail-img {
+    width: 50%;
+}
+
+main section .detail-img img {
+    width: 100%;
+}
+
+main .cta {
+    position: relative;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px #00000038;
+    background: #fff;
+    margin-top: 50px;
+    margin-bottom: -200px;
+    padding: 30px 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 4;
+}
+
+main .cta .cta-btn {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+
+footer {
+    position: relative;
+    background-color: hsl(192, 100%, 9%);
+    padding: 140px 60px 40px 60px;
+    width: 100%;
+}
+
+footer .footerwrapper {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+footer .footerwrapper .footitem {
+    width: 25%;
+}
+
+footer a, footer p {
+    color: #fff;
+}
+
+.footerlogo img {
+    width: 65%;
+}
+
+.footitem .quick-info {
+    display: flex;
+}
+
+
+/* Mobile styles */
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 25px 20px;
+    }
+    
+    header .logo {
+        width: 25%;
+    }
+
+    header .menubtn .btn {
+        font-size: 12px;
+        padding: 8px 25px;
+    }
+
+    .jumbotron {
+        background-image: url(images/bg-hero-mobile.svg);
+    }
+
+    .jumbotron .container {
+        flex-direction: column;
+    }
+    
+    .jumbotron .container .hero-content {
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .container .hero-content h1 {
+        font-size: 25px;
+    }
+    
+    .container .btn {
+        font-size: 16px;
+    }
+    
+    .jumbotron .container .hero-img {
+        width: 100%;
+    }
+
+    main {
+        position: relative;
+        padding: 100px 20px;
+        justify-content: center;
+    }
+    
+    main section {
+        flex-direction: column;
+        padding: 50px 40px;              
+    }
+
+    main section.reverse {
+        flex-direction: column-reverse;
+    }
+    
+    main section .content {
+        width: 100%;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    
+    main section .detail-img {
+        width: 100%;
+    }
+    
+    main section .detail-img img {
+        width: 100%;
+    }
+    
+    main .cta {
+        padding: 30px 24px;
+    }
+
+    main .cta h3 {
+        font-size: 20px;
+    }
+    
+    main .cta .cta-btn {
+        background-color: hsl(322, 100%, 66%);
+        color: #fff;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 16px;
+    }
+ }
