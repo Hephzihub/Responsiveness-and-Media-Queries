@@ -186,9 +186,16 @@ main .cta .cta-btn {
 
 footer {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     background-color: hsl(192, 100%, 9%);
-    padding: 140px 60px 40px 60px;
+    padding: 140px 100px 40px 100px;
     width: 100%;
+}
+
+footer .footerlogo {
+    width: 80%;
 }
 
 footer .footerwrapper {
@@ -196,22 +203,74 @@ footer .footerwrapper {
     display: flex;
     gap: 20px;
     width: 100%;
+    justify-content: space-between;
 }
 
-footer .footerwrapper .footitem {
-    width: 25%;
-}
-
-footer a, footer p {
-    color: #fff;
-}
-
-.footerlogo img {
-    width: 65%;
-}
-
-.footitem .quick-info {
+footer .footerwrapper .footitem1 {
+    width: 40%;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: self-start;
+}
+
+footer a, footer p, footer span {
+    color: #fff;
+    font-size: 16px;
+}
+
+.footitem1 .quick-info, .footitem .quick-info {
+    display: flex;
+    gap: 20px;
+}
+
+.footerwrapper .footitem {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footitem li {
+    width: max-content;
+}
+
+.footitem li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.footitem li a:hover::after {
+    width: 100%;
+}
+
+.footerwrapper .footsocials {
+    display: flex;
+    width: 20%;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.footsocials li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #fff;
+    border-radius: 100%;
+}
+
+.footsocials li a:hover, .footsocials li a:focus{
+    color: hsl(322, 100%, 66%);
+    border-color: hsl(322, 100%, 66%);
+}
+
+footer .copyright {
+    text-align: end;
 }
 
 
@@ -306,5 +365,46 @@ footer a, footer p {
         border-radius: 50px;
         font-weight: 700;
         font-size: 16px;
+    }
+
+    footer {
+        position: relative;
+        background-color: hsl(192, 100%, 9%);
+        padding: 140px 20px 40px 20px;
+        width: 100%;
+    }    
+
+    footer .footerwrapper {
+        flex-direction: column;
+    }
+
+    .footerwrapper .footitem1 {
+        margin-bottom: 30px;
+    }
+    
+    footer .footerwrapper .footitem, footer .footerwrapper .footitem1 {
+        width: 100%;
+    }
+    
+    footer a, footer p {
+        color: #fff;
+    }
+    
+    .footerlogo img {
+        width: 65%;
+    }
+    
+    .footitem .quick-info {
+        display: flex;
+    }
+
+    .footerwrapper .footsocials {
+        width: 100%;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    footer .copyright {
+        text-align: center;
     }
  }
