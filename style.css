@@ -64,7 +64,7 @@ header .menubtn .btn:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 100px;
+    padding-top: 120px;
     padding-bottom: 20px;
     padding-left: 45px;
     padding-right: 45px;
@@ -232,6 +232,7 @@ footer a, footer p, footer span {
 
 .footitem li {
     width: max-content;
+    height: 30px;
 }
 
 .footitem li a::after {
