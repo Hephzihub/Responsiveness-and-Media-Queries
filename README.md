@@ -1,5 +1,5 @@
 # Responsiveness-and-Media-Queries
-Create a responsive page. This page is responsive for both mobile and laptop
+Created a responsive website. This page is responsive for both mobile and laptop
 
 Check the live site via this link
 https://hephzihub.github.io/Responsiveness-and-Media-Queries/
