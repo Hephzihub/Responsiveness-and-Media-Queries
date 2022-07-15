@@ -283,6 +283,12 @@ footer .copyright {
 /* Mobile styles */
 
 @media screen and (max-width: 600px) {
+    footer .copyright {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
     header {
         padding: 25px 20px;
     }
